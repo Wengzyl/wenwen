@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inter&display=swap" rel="stylesheet" />
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  
+  <title>WenWen</title>
+</head>
+<body>
+
+  <div class="login-overlay" id="loginOverlay">
+  <video autoplay muted loop playsinline class="login-video">
+    <source src="deym.mp4" type="video/mp4" />
+  </video>
+
+  <div class="login-box-wrapper">
+    <video autoplay muted loop playsinline class="login-box-video">
+      <source src="deym2.mp4" type="video/mp4" />
+    </video>
+
+    <form class="login-box" onsubmit="return login(event)">
+      <h2>Log in </h2>
+      <p style="margin-bottom: 20px; color: #eee; font-size: 0.9rem;">
+        Username: <b>wenwen</b> | Password: <b>1234</b>
+      </p>
+      <input type="text" id="username" placeholder="Enter Username" required />
+      <input type="password" id="password" placeholder="Enter Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+
+  <div id="mainContent" style="display: none;">
+
+    <video src="g.mp4" autoplay muted loop playsinline class="background-video"></video>
+    <div class="glowing">
+      <span style="--i:0"></span>
+      <span style="--i:1"></span>
+      <span style="--i:2"></span>
+      <span style="--i:3"></span>
+      <span style="--i:4"></span>
+      <span style="--i:5"></span>
+    </div>
+
+    <header data-aos="fade-down" data-aos-delay="200">
+      <div class="container">
+        <div class="content">
+          <div class="basic">
+            <a href="#"><img src="ayay.jpg" alt="WENWEN basic" class="basic-img" /></a>
+            <a href="">WENWEN</a>
+          </div>
+
+          <nav>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="extra-nav">
+            <button data-aos="fade-down" data-aos-delay="400">
+              LOOKING FOR MY FOREVER 🥺
+              <i data-feather="aperture" class="icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="content">
+          <div class="shape-1"></div>
+          <div class="shape-2"></div>
+          <div class="line"></div>
+
+          <svg viewBox="0 0 1320 400">
+  <defs>
+    <linearGradient id="gradient-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="red" />
+      <stop offset="50%" stop-color="white" />
+      <stop offset="100%" stop-color="orange" />
+    </linearGradient>
+  </defs>  
+            
+          <image href="basic.png" x="0" y="0" width="400" height="400" />
+
+  <text x="50%" y="40%" text-anchor="middle" stroke="url(#gradient-stroke)" fill="transparent">
+    WENGZYL
+  </text>
+
+  <text x="50%" y="65%" text-anchor="left" stroke="url(#gradient-stroke)" fill="transparent">
+    CUIBELLAS
+  </text>
+</svg>
+
+          <box-icon name="chevron-down" class="arrow"></box-icon>
+
+          <div class="short-info">
+            <div
+              class="left-side"
+              data-aos="fade-up-right"
+              data-aos-delay="300"
+            >
+              <h1>Midsayap North Cotabato, Philippines</h1>
+              <p class="time"></p>
+            </div>
+
+            <div
+              class="right-side"
+              data-aos="fade-up-left"
+              data-aos-delay="300"
+            >
+              <p></p>
+              <h1>
+                <div class="pulse"></div>
+                NOW AVAILABLE
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="about" id="about">
+        <div class="container">
+            <div class="content">
+                <div class="title">
+                    <h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">About <hr></h1>
+                    <h1 data-aos="fade-right" data-aos-duration="500" data-aos-delay="500">Wenzgyl</h2>
+                </div>
+                
+                <div class="profile-container" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+                  <div class="profile">
+                    <img src="wenzyl.jpg" alt="profile">
+                  </div>
+                </div>
+                
+                <div class="about-me" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                  <p>What’s up? I’m Wengzyl Cuibellas, 21 years young and glowing from Poblacion 8, Midsayap. I’m single, smiling, and maybe exactly what your heart’s been looking for... one message might lead to forever 😏💌"</p>
+                  <button>Learn More <box-icon class="arrow" name='arrow-back'></box-icon></button>
+                </div>
+
+              <div class="text-wrapper" data-aos="flip-up">
+                <div class="text">
+                  <h1>WENWEN <span>WEBSITES</span></h1>
+                  <h1>WENWEN <span>WEBSITES</span></h1>
+                </div>
+                <div class="text">
+                  <h1>WENWEN <span>WEBSITES</span></h1>
+                  <h1>WENWEN <span>WEBSITES</span></h1>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project" id="project">
+  <div class="container">
+    <div class="content">
+      <div class="header">
+        <button data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+          See All Photo
+          <box-icon class="arrow" name='arrow-back'></box-icon>
+        </button>
+
+        <div class="title">
+          <h1 class="row-1" data-aos="fade-left" data-aos-duration="500" data-aos-delay="300">
+            <hr> MY
+          </h1>
+          <h1 class="row-2" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">
+            HOBBIES
+          </h1>
+        </div>
+      </div>
+
+      <div class="project-area" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <div class="projects">
+          <img src="codm.jpg" alt="project-1">
+          <div class="desc">
+            <h1>CODM</h1>
+            <p></p>
+          </div>
+        </div>
+        <div class="projects">
+          <img src="ml.jpg" alt="project-2">
+          <div class="desc">
+            <h1>ML</h1>
+            <p></p>
+          </div>
+        </div>
+        <div class="projects">
+          <img src="food.jpg" alt="project-3">
+          <div class="desc">
+            <h1>FOOD</h1>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+<div class="project-area" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+  <div class="projects">
+    <video src="ride.mp4" autoplay loop muted playsinline></video>
+    <div class="desc">
+      <h1>CHILL RIDE</h1>
+      <p></p>
+    </div>
+  </div>
+  <div class="projects">
+    <video src="nature.mp4" autoplay loop muted playsinline></video>
+    <div class="desc">
+      <h1>NATURE</h1>
+      <p></p>
+    </div>
+  </div>
+  <div class="projects">
+    <video src="valo.mp4" autoplay loop muted playsinline></video>
+    <div class="desc">
+      <h1>VALORANT</h1>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+    <section class="contact" id="contact">
+  <div class="container">
+    <div class="content">
+      <div class="title" data-aos="fade-down" data-aos-delay="300">
+        <h2>LET'S</h2>
+        <h1>MAKE MAGIC</h1>
+      </div>
+
+      <h1 class="contact-heading">Contact us</h1>
+
+      <form class="contact-form" id="contactForm" data-aos="zoom-in-down" data-aos-delay="300">
+        <label for="name">YOUR NAME</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+
+        <label for="message">MESSAGE</label>
+        <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+
+        <button type="submit">SEND</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+    <footer>
+      <div class="container">
+        <div class="content"> 
+          <h1>WENGZYL SOCIAL MEDIA</h1>
+           <div class="social">
+        <div class="logo">
+          <a href="https://github.com/Wengzyl" target="_blank">
+            <box-icon name='github' type='logo'></box-icon>
+          </a>
+        </div>
+        <div class="logo">
+          <a href="https://www.instagram.com/zyyylllll_" target="_blank">
+            <box-icon name='instagram' type='logo'></box-icon>
+          </a>
+        </div>
+        <div class="logo">
+          <a href="https://www.tiktok.com/@wenzyl01" target="_blank">
+            <box-icon name='tiktok' type='logo'></box-icon>
+          </a>
+        </div>
+      </div>
+          <p>&copy; WenWen <span id="year"></span></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
